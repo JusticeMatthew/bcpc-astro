@@ -1,3 +1,31 @@
 ---
 import ScrollLink from './ScrollLink';
+import { Image } from 'astro:assets';
+import headerLogo from '@/assets/images/header-logo-chunky-tight.png';
+
+const navLinks = [
+  ['about', 'About Us'],
+  ['areas', 'Service Areas'],
+  ['reviews', 'Reviews'],
+];
 ---
+
+<header
+  class="astro-font-bread sticky top-0 z-20 -mb-20 h-20 w-full bg-dark text-light"
+>
+  <div class="container flex h-full items-center justify-between">
+    <Image src={headerLogo} alt="B and C logo" width={96} />
+    <nav>
+      {
+        navLinks.map((link) => (
+          <a
+            href="/"
+            class="hover:bg-mid mx-1 cursor-pointer rounded-sm px-4 py-3 transition-all duration-300 hover:text-brand"
+          >
+            {link[1]}
+          </a>
+        ))
+      }
+    </nav>
+  </div>
+</header>

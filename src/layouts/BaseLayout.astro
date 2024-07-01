@@ -2,6 +2,7 @@
 import '@/styles/global.css';
 import { AstroFont } from 'astro-font';
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+import Header from '@/components/Header.astro';
 ---
 
 <html lang="en">
@@ -74,6 +75,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
   </head>
 
   <body>
+    <Header />
     <main>
       <slot />
     </main>

@@ -1,0 +1,28 @@
+---
+import Button from '@/components/Button.astro';
+import { Icon } from 'astro-icon/components';
+---
+
+<section class="astro-font-bread h-screen w-full bg-dark text-light">
+  <div class="container flex h-full flex-col items-center justify-center">
+    <h1 class="text-center font-bebas text-headline">
+      No pest worries for<span class="block text-brand">an entire year</span
+      >with B&C pest control
+    </h1>
+    <p class="balanced my-4 max-w-[65ch] text-center opacity-80">
+      Our once-a-year pest control treatment in Seminole, West Volusia, and
+      Brevard counties is the perfect solution for homeowners who want peace of
+      mind.
+    </p>
+    <div class="mt-8 flex gap-5">
+      <Button primary>
+        <Icon name="phone-icon" class="mr-3" />
+        407-330-2644
+      </Button>
+      <Button secondary>
+        <Icon name="down-icon" class="mr-3 -scale-x-100" />
+        Learn more
+      </Button>
+    </div>
+  </div>
+</section>
