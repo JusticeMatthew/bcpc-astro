@@ -1,41 +1,76 @@
 ---
 import '@/styles/global.css';
-
-// const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+import { AstroFont } from 'astro-font';
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="favicon" href="/favicon.ico?" />
-    <!-- <link rel="canonical" href={canonicalURL} /> -->
+    <link rel="icon" type="favicon" href="/favicon.ico?v=1" />
+    <link rel="canonical" href={canonicalURL} />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
-    <meta name="description" content="Fill me in" />
-    <!-- 
+    <title>B&C Pest Control</title>
     <meta
-    name="keyword"
-    content="web design, website, development, video editing, creative, business, branding, marketing, apps"
-  />
+      name="description"
+      content="B&C Pest Control. Once-a-year service in Central Florida (West Volusia, Seminole, and Brevard Counties)"
+    />
+    <meta
+      name="keyword"
+      content="pest control, central florida, volusia, b&c, b and c, bandc, german roaches"
+    />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonicalURL} />
-    <meta property="og:title" content="Title" />
+    <meta property="og:title" content="B&C Pest Control" />
     <meta
       property="og:description"
-      content="Description"
+      content="B&C Pest Control. Once-a-year service in Central Florida (West Volusia, Seminole, and Brevard Counties)"
     />
-    <meta property="og:image" content="OG image" />
+
+    <meta property="og:image" content="/images/og-image.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta property="twitter:title" content="Title" />
+    <meta property="twitter:title" content="B&C Pest Control" />
     <meta
       property="twitter:description"
-      content="Description"
+      content="B&C Pest Control. Once-a-year service in Central Florida (West Volusia, Seminole, and Brevard Counties)"
     />
-    <meta property="twitter:image" content="OG image" />
-    <meta property="twitter:url" content={canonicalURL} /> -->
+    <meta property="twitter:image" content="/images/og-image.png" />
+    <meta property="twitter:url" content={canonicalURL} />
+    <AstroFont
+      config={[
+        {
+          name: 'BebasNeue',
+          src: [
+            {
+              style: 'normal',
+              weight: '400',
+              path: 'fonts/BebasNeue.woff2',
+            },
+          ],
+          preload: true,
+          display: 'swap',
+          selector: '.astro-font-title',
+          fallback: 'sans-serif',
+        },
+        {
+          name: 'Inter',
+          src: [
+            {
+              style: 'normal',
+              weight: '400',
+              path: 'fonts/Inter.woff2',
+            },
+          ],
+          preload: true,
+          display: 'swap',
+          selector: '.astro-font-bread',
+          fallback: 'sans-serif',
+        },
+      ]}
+    />
   </head>
 
   <body>

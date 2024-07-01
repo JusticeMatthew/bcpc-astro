@@ -1,9 +1,9 @@
 import { defineConfig } from 'astro/config';
-
-import tailwind from "@astrojs/tailwind";
+import tailwind from '@astrojs/tailwind';
+import preact from '@astrojs/preact';
 
 // https://astro.build/config
 export default defineConfig({
-  // site: 'Fill me in',
-  integrations: [tailwind()]
+  site: 'https://www.bandcpestcontrol.com/',
+  integrations: [tailwind(), preact({ compat: true })],
 });

@@ -3,15 +3,23 @@
   "type": "module",
   "version": "0.0.2",
   "scripts": {
-    "dev": "astro dev --open /",
+    "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
+  "overrides": {
+    "react": "npm:@preact/compat@latest",
+    "react-dom": "npm:@preact/compat@latest"
+  },
   "dependencies": {
+    "@astrojs/preact": "^3.5.0",
     "@astrojs/tailwind": "latest",
     "astro": "latest",
+    "astro-font": "^0.0.81",
+    "preact": "^10.22.0",
+    "react-scroll": "^1.9.0",
     "tailwindcss": "latest"
   },
   "devDependencies": {
