@@ -1,5 +1,5 @@
 ---
-const { secondary, primary } = Astro.props;
+const { secondary, primary, update } = Astro.props;
 ---
 
 <button
@@ -10,6 +10,9 @@ const { secondary, primary } = Astro.props;
     },
     {
       'bg-mid font-normal text-light': secondary,
+    },
+    {
+      'w-full': update,
     },
   ]}
 >

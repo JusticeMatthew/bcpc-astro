@@ -22,7 +22,7 @@ export default {
         min: 'var(--step-00)',
         bread: 'var(--step-0)',
         subtitle: 'var(--step-1)',
-        title: 'var(--step-5)',
+        title: 'var(--step-3)',
         headline: 'var(--step-7)',
       },
       colors: {

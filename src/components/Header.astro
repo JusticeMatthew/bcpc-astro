@@ -14,7 +14,9 @@ const navLinks = [
   class="astro-font-bread sticky top-0 z-20 -mb-20 h-20 w-full bg-dark text-light"
 >
   <div class="container flex h-full items-center justify-between">
-    <Image src={headerLogo} alt="B and C logo" width={96} />
+    <a href="/">
+      <Image src={headerLogo} alt="B and C logo" width={96} />
+    </a>
     <nav>
       {
         navLinks.map((link) => (

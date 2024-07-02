@@ -1,0 +1,44 @@
+---
+import Ping from '@/components/Ping.astro';
+import Button from '@/components/Button.astro';
+---
+
+<section class="relative w-full font-inter text-light">
+  <div
+    id="about"
+    class="pointer-events-none absolute top-0 z-0 flex w-full -translate-y-[30rem] justify-center overflow-hidden"
+  >
+    <span
+      class="whitespace-nowrap font-bebas text-[48rem] text-brand opacity-[.01]"
+    >
+      about us
+    </span>
+  </div>
+  <div class="container my-section flex justify-evenly">
+    <div
+      class="rounded bg-dark/20 p-8 ring-1 ring-inset ring-brand backdrop-blur-xl"
+    >
+      <div class="mb-3 flex items-center">
+        <Ping />
+        <p class="ml-3 font-bebas text-subtitle text-brand">Update</p>
+      </div>
+      <h2 class="mb-8 font-bebas text-title">brevard county service</h2>
+      <p class="pretty mb-12 max-w-[40ch]">
+        We&apos;re happy to announce we are now offering pest control in Brevard
+        County which will be serviced by Andy Anderson.
+        <span class="mb-6 block"></span>
+        Andy is a lifelong resident of Melbourne and he and Garry have been friends
+        since high school.
+      </p>
+      <Button primary update>Call to schedule</Button>
+      <p class="mt-4 w-full text-center text-min">
+        or text Andy directly at:&nbsp;
+        <a
+          href="sms:3212656877"
+          class="underline decoration-brand underline-offset-4">321-265-6877</a
+        >
+      </p>
+    </div>
+    <div>Right content</div>
+  </div>
+</section>
